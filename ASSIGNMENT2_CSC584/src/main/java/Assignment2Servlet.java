@@ -32,26 +32,17 @@ public class Assignment2Servlet extends HttpServlet {
 			case "createAssignment2r": 
 				createAssignment2(request,response);
 			break;
-			/*case "deleteKhairatmember":
-				deleteKhairatmember(request,response;)
-			break;
-			case "updateKahiratmember":
-				updateKhairatmember(request,responses);
-				break;
-				case "cancel":
-				 * cancel(request,response);
-				 * break;*/
 			
 		}
 		}
-		catch (SQLException e) {
+		catch(SQLException e) {
 			throw new ServletException(e);
 			}
 	}	
-			
+		
 	
 			
-	private void createAssignment2(HttpServletRequest request, HttpServletResponse response) {
+	private void createAssignment2(HttpServletRequest request, HttpServletResponse response) throws SQLException {
 		// TODO Auto-generated method stub
 		String name=request.getParameter("name");
 		String age=request.getParameter("age");
