@@ -6,11 +6,17 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Assignment2DAO {
+	
+	String dbURL ="jdbc:postgresql://ec2-23-23-151-191.compute-1.amazonaws.com";
+	String user ="jjizbnxhzvxido";
+	String pass ="c22c829045cd11c0add3a4e16e338c4eb05eb19a9fad182ae406eb00cacf73f7";
+	
+
 	protected Connection getConnection() {
-        Connection connection = null;
+        Connection con = null;
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection(dbURL, user, pass);
+            con = DriverManager.getConnection(dbURL, user, pass);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -18,7 +24,8 @@ public class Assignment2DAO {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return connection;
+        return con;
+
     }
 	
 

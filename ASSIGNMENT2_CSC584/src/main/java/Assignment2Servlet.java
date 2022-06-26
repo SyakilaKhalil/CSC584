@@ -1,9 +1,6 @@
 
-
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,20 +15,39 @@ public class Assignment2Servlet extends HttpServlet {
 	public void init() {
 		ss=new Assignment2DAO();
 	}
-
-			
+	
+	 public Assignment2Servlet() {
+	    	super();
+	        // TODO Auto-generated constructor stub
+	    }
+	
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 		
 		String action = request.getParameter("action");
 		try {
-			switch(action){
-			case "createAssignment2":
+			switch (action) {
+			case "createAssignment2r": 
 				createAssignment2(request,response);
+			break;
+			/*case "deleteKhairatmember":
+				deleteKhairatmember(request,response;)
+			break;
+			case "updateKahiratmember":
+				updateKhairatmember(request,responses);
 				break;
+				case "cancel":
+				 * cancel(request,response);
+				 * break;*/
+			
+		}
+		}
+		catch (SQLException e) {
+			throw new ServletException(e);
 			}
-		}}			
+	}	
 			
 	
 			
