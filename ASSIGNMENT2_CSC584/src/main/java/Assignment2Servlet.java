@@ -19,23 +19,19 @@ public class Assignment2Servlet extends HttpServlet {
 		ss=new Assignment2DAO();
 	}
 
+			
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 		
 		String action = request.getParameter("action");
 		try {
-			switch (action) {
-			case "createaAssignment2": 
+			switch(action){
+			case "createAssignment2":
 				createAssignment2(request,response);
-			break;	
-		}
-		}
-		catch (SQLException e) {
-			throw new ServletException(e);
+				break;
 			}
-	}
-				
+		}}			
 			
 	
 			
@@ -66,4 +62,4 @@ public class Assignment2Servlet extends HttpServlet {
 		ss.createAssignment2(ac);
 			
 	}
-}
+	}
