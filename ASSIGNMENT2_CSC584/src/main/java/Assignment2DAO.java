@@ -37,7 +37,7 @@ public class Assignment2DAO {
 	            preparedStatement.setString(2, ac.getage());
 	            preparedStatement.setString(3, ac.getemail());
 	            preparedStatement.setString(4, ac.getphoneNumber());
-	            preparedStatement.setString(5, ac.getdate());
+	            preparedStatement.setString(5, ac.getdatee());
 	            preparedStatement.setString(6, ac.getitem());
 	            preparedStatement.setString(7, ac.getbrand());
 	            preparedStatement.setString(8, ac.getproblem());
@@ -63,7 +63,7 @@ public class Assignment2DAO {
         	statement.setString(2, form.getage());
             statement.setString(3, form.getemail());
             statement.setString(4, form.getphoneNumber());
-            statement.setString(5, form.getdate());
+            statement.setString(5, form.getdatee());
             statement.setString(6, form.getitem());
             statement.setString(7, form.getbrand());
             statement.setString(8, form.getproblem());

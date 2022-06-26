@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>BUNDLE CLOTH SERVICE</h1>
-	<form id="form" action="ServiceServlet" method="post">
+	<form id="form" action="Assignment2Servlet" method="post">
 		<fieldset id="PersonalInfo"><legend>Personal Information</legend>
 
 			<div class="grid-container">
@@ -20,7 +20,7 @@
 				<label for="phoneNumber">Phone Number*</label>
 				<input type="text" name="phoneNumber" required>
 				<label for="date">Date*</label>
-				<input type="date" name="dateService" required>
+				<input type="date" name="datee" required>
 				<i class="fas fa-calender-alt"></i>
 			</div>
 		</fieldset>

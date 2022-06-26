@@ -4,7 +4,7 @@ public class Assignment2 {
  String age;
  String email;
  String phoneNumber;
- String date;
+ String datee;
  String item;
  String brand;
  String problem;
@@ -43,13 +43,13 @@ public void setphoneNumber(String phoneNumber)
 {
 	this.phoneNumber=phoneNumber;
 	}
-public String getdate()
+public String getdatee()
 {
-	return date;
+	return datee;
 	}
-public void setdate(String date)
+public void setdatee(String datee)
 {
-	this.date=date;
+	this.datee=datee;
 	}
 public String getitem()
 {

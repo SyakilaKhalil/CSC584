@@ -57,7 +57,7 @@ public class Assignment2Servlet extends HttpServlet {
 		String age=request.getParameter("age");
 		String email=request.getParameter("email");
 		String phoneNumber=request.getParameter("phoneNumber");
-		String date=request.getParameter("date");
+		String datee=request.getParameter("datee");
 		String item=request.getParameter("item");
 		String brand=request.getParameter("brand");
 		String problem=request.getParameter("problem");
@@ -69,7 +69,7 @@ public class Assignment2Servlet extends HttpServlet {
 		ac.setage(age);
 		ac.setemail(email);
 		ac.setphoneNumber(phoneNumber);
-		ac.setdate(date);
+		ac.setdatee(datee);
 		ac.setitem(item);
 		ac.setbrand(brand);
 		ac.setproblem(problem);
