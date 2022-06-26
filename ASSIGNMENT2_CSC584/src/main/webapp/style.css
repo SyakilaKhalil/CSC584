@@ -1,0 +1,73 @@
+body{
+	background-color: #FFFDE3;
+}
+
+
+h1{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  background-color:#EEA579;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 70px;
+  position: relative;
+  display: flex;
+  color: white;
+  border-radius: 20px;
+}
+#PersonalInfo{
+	font-size: 18pt;
+}
+.grid-container{
+  grid-template-columns: [labels] left [controls] grid-auto-flow;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  padding: 5px;
+}
+
+.grid-container>input{  
+  grid-column: controls;
+  grid-row: auto;
+  border-radius:8px;
+  border:2px solid ;
+  width: 100%;
+  padding: 5px;
+  border-color: #FFCB87;
+}
+
+.grid-container>textarea{
+  border-radius:8px;
+  border:2px solid;
+  width: 100%;
+  padding: 5px;
+}
+fieldset{
+  background-color: #FFE59E;
+  border-radius: 30px;
+}
+
+label{
+  color: black; 
+  font-size: 14pt;
+}
+
+input:focus{
+  border: 2px solid; 
+  color : #43D1AF;
+}
+button{
+  background-color: #DCE4D1 ;
+  color: black; 
+  font-size: 16px; 
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  align-items: center;
+  text-align: center;
+  padding: 6px;
+  margin-left: 42%;
+}
