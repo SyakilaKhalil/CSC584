@@ -46,18 +46,20 @@ public class Assignment2DAO {
 
 	            out.println(preparedStatement);
 	            preparedStatement.executeUpdate();
-	        } catch (SQLException e) {
-	            printSQLException(e);
-	        }
+	        } 
+		catch (SQLException e) {
+            e.printStackTrace();
+        }
 	}
-
+}
+/*
 	private void printSQLException(SQLException e) {
 		// TODO Auto-generated method stub
 	}
 	public boolean updateform(Assignment2 form) throws SQLException {
         boolean rowUpdated;
         try (Connection connection = getConnection();
-             PreparedStatement statement = connection.prepareStatement("update admin set khairatmembermembername=?,khairatmembermembercontactno=?,khairatmembermemberemail=?, khairatmembermemberpassword=?, khairatmembermemberAddress=? where khairatmembermemberID=?");)
+             PreparedStatement statement = connection.prepareStatement("update form set khairatmembermembername=?,khairatmembermembercontactno=?,khairatmembermemberemail=?, khairatmembermemberpassword=?, khairatmembermemberAddress=? where khairatmembermemberID=?");)
         {
         	statement.setString(1, form.getname());
         	statement.setString(2, form.getage());
@@ -81,4 +83,4 @@ public class Assignment2DAO {
         }
         return rowDeleted;
     }
-}
+}*/
