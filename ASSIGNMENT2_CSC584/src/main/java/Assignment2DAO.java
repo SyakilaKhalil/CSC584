@@ -31,7 +31,7 @@ public class Assignment2DAO {
 
 	public void createAssignment2(Assignment2 ac)throws SQLException {
 		try (Connection connection = getConnection();
-	             PreparedStatement preparedStatement = connection.prepareStatement("insert into Assignment2(name,age,email,phoneNumber,date,item,brand,problem,problemdetails) values(?,?,?,?,?,?,?,?,?)");)
+	             PreparedStatement preparedStatement = connection.prepareStatement("insert into Assignment2(name,age,email,phoneNumber,date,item,brand,problem,problemdetails) values(?,?,?,?,?,?,?,?,?)"))
 	        {
 	            preparedStatement.setString(1, ac.getname());
 	            preparedStatement.setString(2, ac.getage());
